@@ -2,7 +2,6 @@
     include("system/app.php");
     require_once "system/db.php";
     $view = middleware();
-    //middleware() is from app.php
 ?>
 
 <!DOCTYPE html>
@@ -28,7 +27,7 @@
     <?php include("templates/navbar.php"); ?>
 
     <main>
-        <?php render($view, $db_PDO); //render() is from app.php?>
+        <?php render($view, $db_PDO);?>
     </main>
 
     <?php
